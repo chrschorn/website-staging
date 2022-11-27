@@ -10,18 +10,22 @@ layout: default
   }
 </script>
 
+{{ content }}
 
 <section class="hero is-fullheight">
 
   <div class="hero-body">
-    <div class="container">
+    <div class="container mb-6">
       <div class="columns is-vcentered is-variable is-8">
-        <div class="column is-half hide-on-mobile">
-          <div class="cover-image shadow"></div>
+        <div class="column mr-5 is-half is-hidden-touch">
+          <!-- <div class="cover-image shadow"></div> -->
+          <figure class="image is-2by3 cover-image shadow">
+            
+          </figure>
         </div>
-        <div class="column ml-5">
+        <div class="column">
 
-          <div class="block center-on-mobile" style="max-width:175px">
+          <div id="avatar" class="block center-on-mobile">
             <figure class="image is-square">
               <img class="is-rounded shadow" src="{{ '/images/avatar.jpg' | relative_url }}">
             </figure>
@@ -29,7 +33,7 @@ layout: default
 
           <div class="block">
 
-            <div class="box shadow">
+            <div class="box shadow center-on-mobile">
               <h1 class="title">
                 Christoph Schorn
               </h1>
@@ -38,8 +42,8 @@ layout: default
                 Software Engineer <span class="spacer">|</span> Photographer <span class="spacer">|</span> Musician
               </p>
 
-              <div class="columns">
-                <div class="column is-one-third has-text-left">
+              <div class="columns center-on-mobile has-text-left">
+                <div class="column is-one-quarter-tablet is-one-third-desktop">
                   <ul class="fa-ul is-size-6">
                     <li><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span>
                       <a href="https://www.linkedin.com/in/christoph-schorn/" target="_blank" title="LinkedIn">LinkedIn</a>
@@ -53,7 +57,7 @@ layout: default
                   </ul>
                 </div>
 
-                <div class="column is-one-third has-text-left">
+                <div class="column is-one-quarter-tablet is-one-third-desktop">
                   <ul class="fa-ul is-size-6">
                     <li><span class="fa-li"><i class="fa-solid fa-camera"></i></span>
                       <a href="https://photos.schorn.me/" target="_blank" title="Photography">Photography</a>
@@ -93,11 +97,4 @@ layout: default
     </div>
 
   </div>
-
 </section>
-
-
-
-
-
-
