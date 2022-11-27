@@ -16,12 +16,12 @@ layout: default
   <div class="hero-body">
     <div class="container">
       <div class="columns is-vcentered is-variable is-8">
-        <div class="column is-half">
-          <div class="cover-image-small shadow"></div>
+        <div class="column is-half hide-on-mobile">
+          <div class="cover-image shadow"></div>
         </div>
         <div class="column ml-5">
 
-          <div class="block" style="max-width:175px">
+          <div class="block center-on-mobile" style="max-width:175px">
             <figure class="image is-square">
               <img class="is-rounded shadow" src="{{ '/images/avatar.jpg' | relative_url }}">
             </figure>
@@ -39,7 +39,7 @@ layout: default
               </p>
 
               <div class="columns">
-                <div class="column is-one-third">
+                <div class="column is-one-third has-text-left">
                   <ul class="fa-ul is-size-6">
                     <li><span class="fa-li"><i class="fa-brands fa-linkedin"></i></span>
                       <a href="https://www.linkedin.com/in/christoph-schorn/" target="_blank" title="LinkedIn">LinkedIn</a>
@@ -53,7 +53,7 @@ layout: default
                   </ul>
                 </div>
 
-                <div class="column is-one-third">
+                <div class="column is-one-third has-text-left">
                   <ul class="fa-ul is-size-6">
                     <li><span class="fa-li"><i class="fa-solid fa-camera"></i></span>
                       <a href="https://photos.schorn.me/" target="_blank" title="Photography">Photography</a>
@@ -71,7 +71,7 @@ layout: default
           </div>
 
           <div class="block pt-2">
-            <div class="buttons shadow">
+            <div class="buttons shadow center-on-mobile">
               <button class="button is-primary is-rounded" onclick="openMailTab()">
                 <span class="icon">
                   <i class="fa-solid fa-paper-plane"></i>

@@ -40,7 +40,28 @@ $size-5: $size-4 - 0.5rem;
 $size-6: $size-5 - 0.25rem;
 $size-7: $size-6 - 0.25rem;
 
-.cover-image-small {
+.shadow {
+    // box-shadow: $shadow-base;
+    filter: drop-shadow(1.5em 1.5em 2em rgba(black, 0.5));
+}
+
+@import "bulma/bulma";
+
+.hide-on-mobile {
+    @include until($desktop) {
+        display:none;
+    }
+}
+
+.center-on-mobile {
+    @include until($desktop) {
+        justify-content: center;
+        margin-left: auto;
+        margin-right: auto;
+    }
+}
+
+.cover-image {
     background-image: url("{{ '/images/cover-image.jpg' | relative_url }}");
     height: 68vh;
     width: 100%;
@@ -50,22 +71,6 @@ $size-7: $size-6 - 0.25rem;
     border-radius: 6px;
 }
 
-.shadow {
-    // box-shadow: $shadow-base;
-    filter: drop-shadow(1.5em 1.5em 2em rgba(black, 0.5));
-}
-
-.cover-image {
-    background-image: url("{{ '/images/cover-image.jpg' | relative_url }}");
-    height: 100vh;
-    width: 100%;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-
-
-@import "bulma/bulma";
 
 
 a {
@@ -99,6 +104,11 @@ li {
 body {
     background-color: $background;
     color: $text;
+    overflow: hidden;
+}
+
+html {
+    overflow: hidden;
 }
 
 
